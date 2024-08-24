@@ -1,4 +1,4 @@
-package com.dyor.bump_android.ui.theme
+package com.dyor.bump_kmp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

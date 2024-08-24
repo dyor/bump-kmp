@@ -1,8 +1,5 @@
-package com.dyor.bump_android
+package com.dyor.bump_kmp
 
-import BumpCalculator
-import Golfer
-import Hole
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -26,7 +23,6 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -43,9 +39,11 @@ import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.dyor.bump_android.ui.theme.BumpandroidTheme
+import com.dyor.bump_kmp.R
+import com.dyor.shared.BumpCalculator
+import com.dyor.shared.Golfer
+import com.dyor.shared.Hole
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,7 +52,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             var showMatrix by remember { mutableStateOf(false) }
             val golfers = remember { mutableStateListOf<Golfer>() }
-
             var holes = remember {
                 mutableStateListOf<Hole>(
                     Hole(1, 6),

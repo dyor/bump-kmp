@@ -1,3 +1,5 @@
+package com.dyor.shared
+
 class BumpCalculator {
     fun calculateBumps(golfers: List<Golfer>, holes: List<Hole>): Map<String, List<Int>> {
         // Sort the holes by difficulty, descending

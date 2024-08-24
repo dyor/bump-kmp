@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.dyor.bump_android"
+    namespace = "com.dyor.bump_kmp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.dyor.bump_android"
+        applicationId = "com.dyor.bump_kmp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -59,6 +59,9 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(project(":shared"))
+    implementation(project(":shared"))
+    implementation(project(":shared"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
