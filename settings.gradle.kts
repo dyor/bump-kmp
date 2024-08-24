@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "bump-kmp"
 include(":app")
- 
+include(":shared")
